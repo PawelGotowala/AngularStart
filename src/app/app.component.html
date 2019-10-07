@@ -31,8 +31,9 @@ App component
     {{day}}
 </li>
 </ul>
-<ul *ngFor="let dog of dogs">
-    <li>
+
+<ul *ngFor="let dog of dogs; let e = even">
+    <li *ngIf="e">
         {{dog.age}}
     </li>
 
