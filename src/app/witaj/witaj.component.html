@@ -3,7 +3,7 @@
 
 <h3 [className]="colorClass"> Testowanie bindowania ;- property binding</h3>
 
-<img [src]="logoUrl" >
+<img [src]="logoUrl">
 
 <label>
     <input [maxLength]="maxLarge" [value]="inputText">
@@ -14,10 +14,10 @@
 <br><br>
 <input [disabled]="isDisable" (focus)="onFocus()">
 <br>
-<input [disabled]="isDisable" (mousemove)="onMouseMove($event)" >
+<input [disabled]="isDisable" (mousemove)="onMouseMove($event)">
 <br>
 <input [disabled]="isDisable" (focus)="onClick($event)">
 <br>
 <input [disabled]="isDisable" (paste)="onPaste()"> {{inputText}}
 <br>
-<button (click)="change()">zmiana</button>
+<button (click)="change2()">zmiana</button>

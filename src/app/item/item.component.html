@@ -1,1 +1,18 @@
-<p>item </p>
+<h3> Event + binding</h3>
+
+<p> Ten pracownik to {{profession}}, a jego umiejętność to {{skill}}</p>
+
+<label for="male"> Zawód</label>
+<input [value]="profession" (input)="inputP($event)">
+<br>
+<label for="male"> Umiejętność</label>
+<input [value]="skill" (input)="inputS($event)">
+<br><br>
+<label for="male"> Zawód</label>
+<input [(ngModel)]="profession">
+<br><br>
+<label for="male"> Umiejętność</label>
+<input [(ngModel)]="skill">
+
+
+
