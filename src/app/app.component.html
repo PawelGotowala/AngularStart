@@ -36,5 +36,21 @@ App component
     <li *ngIf="e">
         {{dog.age}}
     </li>
-
 </ul>
+<ul *ngFor="let dog of dogs">
+    <li *ngIf="dog.age >2">
+        {{dog.age}}
+    </li>
+</ul>
+
+<div *ngIf="dogs.length > 4; then areDogs; else noDogs"></div>
+
+<ng-template #areDogs>
+    <div *ngFor="let dog of dogs">
+       Pise ma na imię {{dog.name}}.
+    </div>
+</ng-template>
+
+<ng-template #noDogs>
+    <p>Nie ma piesków</p>
+</ng-template>
