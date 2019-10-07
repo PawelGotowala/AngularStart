@@ -10,3 +10,14 @@
 </label>
 
 <button [disabled]="isDisable" (click)="change()">Dodaj</button>
+
+<br><br>
+<input [disabled]="isDisable" (focus)="onFocus()">
+<br>
+<input [disabled]="isDisable" (mousemove)="onMouseMove($event)" >
+<br>
+<input [disabled]="isDisable" (focus)="onClick($event)">
+<br>
+<input [disabled]="isDisable" (paste)="onPaste()"> {{inputText}}
+<br>
+<button (click)="change()">zmiana</button>
