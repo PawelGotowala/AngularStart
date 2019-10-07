@@ -1,1 +1,12 @@
 <p>Witaj w aplikacji</p>
+
+
+<h3 [className]="colorClass"> Testowanie bindowania ;- property binding</h3>
+
+<img [src]="logoUrl" >
+
+<label>
+    <input [maxLength]="maxLarge" [value]="inputText">
+</label>
+
+<button [disabled]="isDisable" (click)="change()">Dodaj</button>
