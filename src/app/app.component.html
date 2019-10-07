@@ -6,7 +6,7 @@ App component
             <app-witaj></app-witaj> <br>
             {{dog.name | uppercase}} <br>
             {{showDog()}} <br>
-            {{date | date: 'dd-MM-RR'}}
+            {{date | date: 'dd-MM-yy'}}
         </td>
     </tr>
     <!-- drugi wiersz-->
@@ -26,3 +26,14 @@ App component
         </td>
     </tr>
 </table>
+<ul *ngFor="let day of days">
+<li >
+    {{day}}
+</li>
+</ul>
+<ul *ngFor="let dog of dogs">
+    <li>
+        {{dog.age}}
+    </li>
+
+</ul>
